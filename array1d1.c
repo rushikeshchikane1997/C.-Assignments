@@ -1,8 +1,6 @@
 #include <stdio.h>
  
-// 1. Write a program to accept marks of five subjects, calculate its total and average.
-
-
+// 1. Write a program to accept marks of five subjects, calculate its total and average
 
 
 
@@ -51,8 +49,36 @@ int main() {
 
 
 
+#include<stdio.h>
 
 
+int main(void)
+{
+	int mat[3][3];
+	
+	printf("Enter 2D array : \n");
+	for(int i = 0 ; i < 3 ; i++)
+	{
+		for(int j = 0 ; j < 3 ; j++)
+		{
+			printf("mat %d %d : ", i, j);
+			scanf("%d", &mat[i][j]);
+		}
+	}
+
+	printf("2D array : \n");
+	for(int i = 0 ; i < 3 ; i++)
+	{
+		for(int j = 0 ; j < 3 ; j++)
+		{
+			printf("%-4d", mat[i][j]);
+		}
+		printf("\n");
+	}
+ 
+
+ return 0;
+}
 
 
 
